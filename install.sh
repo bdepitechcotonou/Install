@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo_message() {
-    echo -e "\e[1;32m$1\e[0m"
+    echo "\e[1;32m$1\e[0m"
 }
 
 echo_message "Checking and Installing Wget..."
@@ -20,3 +20,6 @@ sudo ln -sf -v /opt/Discord/Discord /usr/bin/Discord
 
 echo_message "Creating Desktop Entry..."
 sudo cp -r -v /opt/Discord/discord.desktop /usr/share/applications
+
+echo_message "Join Channel ..."
+firefox https://discord.gg/Npg4hFgkAC
