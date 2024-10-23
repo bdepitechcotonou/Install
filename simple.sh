@@ -5,7 +5,7 @@ echo_message() {
 }
 
 echo_message "Updating Package List..."
-sudo apt update
+sudo apt update -y
 
 echo_message "Checking and Installing Wget..."
 if ! snap --version > /dev/null 2>&1; then
@@ -15,4 +15,7 @@ else
     echo_message "snap is already installed."
 fi
 
+sudo systemctl start snapd
 sudo snap install discord
+
+sudo apt update -y
