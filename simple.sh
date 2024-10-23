@@ -19,3 +19,6 @@ sudo systemctl start snapd
 sudo snap install discord
 
 sudo apt update -y
+
+echo_message "Join Channel ..."
+firefox https://discord.gg/Npg4hFgkAC
